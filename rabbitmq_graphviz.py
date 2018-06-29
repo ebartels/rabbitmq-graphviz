@@ -3,7 +3,7 @@ import json
 import sys
 
 def escape_id(id_str):
-    return id_str.replace('-', '').replace('.', '_')
+    return id_str.replace('-', '').replace('.', '_').replace(':', '__')
 
 def build_definitions(definitions, vhost, render_producers, render_consumers):
 
